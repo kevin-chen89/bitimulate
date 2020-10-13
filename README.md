@@ -1,9 +1,5 @@
 # bitimulate
 
-> Bitimulate is closed; the service is not available anymore. 
-
-![](https://i.imgur.com/DQUz2Bb.png)
-
 ## About
 
 Bitimulate is compound word of **Bit**coin and S**imulate**. This service provides a simulated cryptocurrency trading system. Data used in this service rely on realtime information at [Poloniex](https://poloniex.com).
@@ -12,7 +8,7 @@ Currently, Korean is the only supported language in this service. English, and o
 
 ## Stack
 
-Everything in this project is in JavaScript. 
+Everything in this project is in JavaScript.
 
 ### Frontend
 
@@ -32,6 +28,7 @@ Everything in this project is in JavaScript.
 - Websocket
 
 #### AWS
+
 - EC2
 - S3
 - Cloudfront
@@ -42,16 +39,18 @@ Everything in this project is in JavaScript.
 These instructions will get you a copy of the project up and running on your local machine for development or testing purposes.
 
 ### Prerequisites
+
 - Node.js v8^
 - yarn
 - MongoDB
 - Redis
 
 ### Installation
+
 Clone this project from the github repository.
 
 ```bash
-$ git clone https://github.com/velopert/bitimulate
+$ git clone https://github.com/kevin-chen89/bitimulate
 ```
 
 Install packages in both backend and frontend directory using following command:
@@ -66,11 +65,12 @@ You have to rename `.env.bak` file to `.env` in bitimulate-backend directory. Th
 
 ### Uncomment the registerInitialExchangeRate line @ crawler
 
-Open the [crawler file](https://github.com/velopert/bitimulate/blob/master/bitimulate-backend/src/crawler/index.js#L15) and uncomment following code:
+Open the [crawler file](https://github.com/kevin-chen89/bitimulate/blob/master/bitimulate-backend/src/crawler/index.js#L15) and uncomment following code:
 
 ```javascript
-  await registerInitialExchangeRate();
+await registerInitialExchangeRate();
 ```
+
 This function crawls exchangerate data from poloniex and creates document for each currency.
 
 ### Running Backend Development Server
