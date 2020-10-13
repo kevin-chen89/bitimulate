@@ -4,8 +4,6 @@
 
 Bitimulate is compound word of **Bit**coin and S**imulate**. This service provides a simulated cryptocurrency trading system. Data used in this service rely on realtime information at [Poloniex](https://poloniex.com).
 
-Currently, Korean is the only supported language in this service. English, and other languages might be implemented later on...
-
 ## Stack
 
 Everything in this project is in JavaScript.
